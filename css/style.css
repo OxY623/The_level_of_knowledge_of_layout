@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'BARLOW';
+    src: url('../fonts/Barlow-Light.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'BARLOW', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    height: 100%;
+}
+
+h1 {
+    color: black;
+}
+
+p {
+    color: #2A4A5C;
+}
+
+html {
+    padding: 3%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    background-color: #EEEEEE;
+    height: 100%;
+}
+
+.imgAndLogo {
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.img_logo {
+    padding-left: 5%;
+    padding-top: 5%;
+    width: 20%;
+    height: auto;
+    align-items: center;
+}
+
+
+
+
+
+.content {
+    width: 50%;
+    background-color: #EFF6FF;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: left;
+}
+
+.content h1 {
+    font-size: 1.5em;
+}
+
+.content p {
+    color: #7B8A92;
+    margin-bottom: 3%;
+}
+
+.btns {
+    /*padding-top:5%;*/
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: space-evenly;*/
+    /*align-items: center;*/
+    display: block;
+    width: 100%;
+    margin-top: 10%;
+
+}
+
+.button {
+
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.6em;
+    color: white;
+    padding: 10px 42px;
+    background-color: #255A9B;
+    margin-left: 0;
+    margin-right: 10%;
+
+}
+
+.button:first-child::before {
+    content: "";
+    display: inline-block;
+    height: auto;
+    width: auto;
+    background-image: url("img/facebook.svg");
+    background-origin: padding-box;
+    background-position: left;
+
+}
+
+
+.button:last-child::before {
+    content: "";
+    display: inline-block;
+    height: auto;
+    width: auto;
+    color: white;
+    background-image: url("img/linkedin.svg");
+    background-origin: padding-box;
+    background-position: left;
+    background-size: 5%;
+}
+
+.divider_block_or {
+    /*text-align: center;*/
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: black;
+    font-weight: bold;
+    margin-top: 3%;
+    padding-left: 33.33%;
+}
+
+.divider_block_or::before {
+    content: "";
+    display: inline-block;
+    height: 0.5px;
+    width: 10%;
+    color: black;
+    background-color: black;
+    vertical-align: center;
+    margin-bottom: 5px;
+
+}
+
+.divider_block_or::after {
+
+    content: "";
+    display: inline-block;
+    height: 0.5px;
+    width: 10%;
+    color: black;
+    background-color: black;
+    vertical-align: center;
+    margin-bottom: 5px;
+
+}
+
+.blockEmailPhoneEl {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /*display: inline-block;*/
+    width: 100%;
+    margin-top: 3%;
+    /*margin-right: auto;*/
+
+}
+
+.blockEmailPhoneEl div {
+    margin-left: 0;
+    margin-right: 10%;
+    width: 35%;
+    background-color: white;
+    border: 1px solid grey;
+    padding: 0.5%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1%;
+}
+
+.blockEmailPhoneEl div:first-child {
+    border-left: 2px solid blue;
+}
+
+.blockEmailPhoneEl div label {
+    background-color: white;
+    color: #7B8A92;
+    font-size: 0.8em;
+}
+
+.blockEmailPhoneEl div input {
+    font-size: 0.8em;
+    border: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.RadioElementBlock{margin-top: 10%;}
+.RadioElements {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    margin-right: auto;
+}
+
+.RadioElement {
+    padding: 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.RadioElement a {
+    text-decoration: none;
+    color: black;
+}
+
+.button_submit {
+    margin-top: 10%;
+
+    background-color: #03d5fc;
+    font-size: 0.8em;
+}
+
+.checkbox {
+    margin-top: 10%;
+    margin-bottom: 0%;
+}
+
+
+

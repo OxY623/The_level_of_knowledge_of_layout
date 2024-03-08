@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<!-- Левый элемент -->
+<div class="imgAndLogo">
+    <div class="Logo">
+        <img class="img_logo" src="img/logo.svg" alt="logo">
+    </div>
+</div>
+<!-- Правый элемент -->
+<main class="content">
+    <!-- Это форма -->
+    <form method="post">
+        <!-- Элемент 1 -->
+        <div class="title">
+            <h1>Get into it today</h1>
+            <p>There is no charge or obligation upon registration.</p>
+        </div>
+        <!-- Элемент 2 -->
+        <div class="registrations">
+            <div class="wrapper">
+                <div class="btns">
+                    <a class="button" href="#">
+                        <!--                    <img src="img/facebook.svg" alt="logo_facebook" style="width: 5%">-->
+                        Register with Facebook
+                    </a>
+                    <a class="button" href="#">
+                        <!--                    <img src="img/linkedin.svg" alt="logo_Linkedin" style="width: 5%">-->
+                        Register with Linkedin
+                    </a>
+                </div>
+                <!-- Элемент 3 Или -->
+                <div class="divider_block_or">
+                    <span>or</span>
+                </div>
+                <!-- Элемент 4 Почта Телефон -->
+                <div class="blockEmailPhoneEl">
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" value="gus.goodwin@gmail.com">
+                    </div>
+                    <div class="phone">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+            </div>
+            <!-- Элемент 5 Переключатели -->
+            <div class="RadioElementBlock">
+                <div class="question">
+                    <h3>What type of investor are you?</h3>
+                    <p>Select the type of investor you are below.</p>
+                </div>
+                <div class="RadioElements">
+                    <!-- Переключатель 1 -->
+                    <div class="RadioElement">
+                        <input type="radio" checked id="Choice1" name="investorType" value="Individual"/>
+                        <label for="Choice1" title="Select if you are an individual investor">Individual</label>
+                        <a href="#">ⓘ</a>
+                        <div>
+                            <span hidden="hidden">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</span>
+                        </div>
+                    </div>
+                    <!-- Переключатель 2 -->
+                    <div class="RadioElement">
+                        <input type="radio" id="Choice2" name="investorType" value="Business"/>
+                        <label for="Choice2" title="Select if you are a business investor">Business</label>
+                        <a href="#">ⓘ</a>
+                        <div hidden="hidden">
+                            <span>I am investing on behalf of a business entity.</span>
+                        </div>
+                    </div>
+                    <!-- Переключатель 3 -->
+                    <div class="RadioElement">
+                        <input type="radio" id="Choice3" name="investorType" value="IRA"/>
+                        <label for="Choice3" title="Select if you are an IRA investor">IRA</label>
+                        <a href="#">ⓘ</a>
+                        <div hidden="hidden">
+                            <span>I am investing through an IRA account.</span>
+                        </div>
+                    </div>
+                    <!-- Переключатель 4 -->
+                    <div class="RadioElement">
+                        <input type="radio" id="Choice4" name="investorType" value="Trust"/>
+                        <label for="Choice4" title="Select if you are a trust investor">Trust</label>
+                        <a href="#">ⓘ</a>
+                        <div hidden="hidden">
+                            <span>I am investing through a trust.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <!-- Флажок -->
+                    <input checked type="checkbox" id="agree" name="agree"/>
+                    <label for="agree">I agree to the terms and receiving notifications from intoo <a href="#">View full
+                        terms</a></label>
+                </div>
+                <!-- Элемент 6 Кнопка Создать аккаунт -->
+                <div>
+                    <button class="button button_submit" type="submit">Create Account</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</main>
+</div>
+
+</body>
+</html>
